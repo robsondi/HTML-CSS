@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #696969;
+            margin: 0px;
+        }
+           
+        header{
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: #666666;
+            padding: 5px;
+           box-shadow: 2px 2px 4px 1px hsla(0, 0%, 0%, 0.315);
+        }
+        nav > a{
+            text-decoration:none;
+            color: #ffffff;
+            font-weight: bold;
+            margin-right: 30px;
+           
+        }
+        nav > a:hover{
+            text-decoration:underline #00ff4c 4px;
+        }
+        main{
+           
+            background-color: #ffffff ;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+       
+        article{
+            
+            background-color: #d3d3d3 ;
+            padding: 5px;
+        }
+        
+        article > aside{
+            background-color: #a5a5a5;
+           
+        }
+        footer{
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contatos</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esporte Politica Tecnologia</h2>
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem similique exercitationem officia totam commodi eos et reiciendis ipsum obcaecati in dolorem pariatur nesciunt cupiditate, praesentium aspernatur quam sit repudiandae?</p>
+                <aside>
+                    <p>Artigo escrito por Robson Germano</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Robson</p>
+    </footer>
+ 
+    
+</body>
+</html>
