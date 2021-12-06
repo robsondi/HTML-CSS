@@ -10,6 +10,8 @@ html, body{
     background-color: darkgray;
 }
 
+        /*CABEÇALHO*/
+
 header{
     background-color: black;
     color: white;
@@ -35,6 +37,8 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
+        /*SECOES*/
+
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -56,6 +60,8 @@ section.imagem{
     color:white;
 }
 
+        /*RODAPÉ*/
+        
 footer{
     background-color: black;
     color: white;
