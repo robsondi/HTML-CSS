@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            padding: 30px;
+            font: bolder;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 20px;
+            background-color: rgb(153, 248, 216);
+        }
+        fieldseT{
+            text-align: center;
+            
+            background-color: rgb(157, 245, 216);
+        }
+        input{
+            font-size: 15px;
+            color: black ;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Escolhas</legend>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>...Escolha...</option>
+                    <optgroup label="região sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="região nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernanbuco</option>
+                        <option value="RN">Rio grande do norte</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="istprof" placeholder="Escolha sua profissão">
+                <datalist id="istprof">
+                   <option value="ADM">Admistrador</option>
+                   <option value="Cont">Contabiloidade</option>
+                   <option >Desenvolvedor</option>
+                   <option >Professor</option>
+                   <option >Operdor de Maquinas</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="escreva uma mensagem"></textarea>
+            </p>
+            <p>
+                <input type="submit"value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+</form>
+</body>
+</html>
